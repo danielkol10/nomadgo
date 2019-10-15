@@ -2,6 +2,6 @@
 
 class GuidesController < ApplicationController
   def show
-    @guide = Guide.find(params[:id])
+    @guide = Guide.find(params[:city_id])
   end
 end
