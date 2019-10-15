@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# City.destroy_all
-# Guide.destroy_all
+City.destroy_all
+Guide.destroy_all
 
 bansko = City.create(name: 'bansko', internet: '3gb')
 bansko.save!

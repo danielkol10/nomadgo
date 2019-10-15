@@ -6,6 +6,6 @@ class CitiesController < ApplicationController
     end
 
   def show
-    @city = City.friendly.find(params[:id])
+    @city = City.find(params[:id])
   end
 end
