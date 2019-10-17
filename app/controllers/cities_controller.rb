@@ -16,7 +16,8 @@ class CitiesController < ApplicationController
     url = "https://api.darksky.net/forecast/3399c810cb9e7497f7bedddf3f891700/#{lat},#{long}"
     response = HTTParty.get(url, format: :json)
     body = JSON.parse(response.body)
-    puts body['daily']['summary']
+    temperature = body['currently']['temperature']
+    puts temperature
   end
   # helper_method :current_user
 end
