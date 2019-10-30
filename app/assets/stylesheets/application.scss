@@ -13,13 +13,10 @@
  *= require_tree .
  *= require_self
  */
-
-@import "components/_banner";
+@import "index";
 
 * {
   box-sizing: border-box;
-  width:100%;
+  width: 100%;
   margin: 0px;
 }
-
-
