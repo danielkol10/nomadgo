@@ -1,8 +1,11 @@
 .navbar {
-  height: 80px;
-  border: 2px solid black;
+  height: 70px;
+  border-bottom: 2px solid black;
   width: 100%;
+  background-color: transparent;
   font-size: 1.25em;
+  position: fixed;
+  top: 0;
   }
 
 .navbarwrap {
@@ -24,7 +27,7 @@
 
 
 .navlogo {
-height: 50px;
+height: 40px;
 width: auto;
 margin-right: auto;
 }
@@ -34,6 +37,6 @@ margin-right: auto;
   padding: 5px;
 }
 
-.navlink:hover {
+.navlink:hover, .navlink:active {
   border-bottom: 2px solid black;
 }
