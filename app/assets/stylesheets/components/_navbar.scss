@@ -1,13 +1,19 @@
-.navbar{
-  display: flex;
+.navbar {
   height: 80px;
-  padding-left: 40px;
-  padding-right: 40px;
-  justify-content: space-between;
   background: green;
-}
+  width: 100%;
+  vertical-align: center;
+  }
+  .navbarwrap{
+    display: flex;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+      }
 
-.navlinkbox{
+.navlinkbox {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 25%;
 }
