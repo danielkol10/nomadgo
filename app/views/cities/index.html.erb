@@ -1,6 +1,7 @@
 <h1>Cities#index</h1>
-<p>asi knows his shit</p>
+
 <%=render "partials/navbar"%>
+<%= render "partials/banner" %>
 <%= link_to "Blog", '/blog' %>
    <% @cities.each do |city| %>
      <%= link_to city.name, city_path(city) %>
