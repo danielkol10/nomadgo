@@ -1,0 +1,12 @@
+.banner {
+  height: 75vh;
+  text-align: center;
+  background-image: url("banner.jpg");
+  color: white;
+  font-size: 30px;
+  .banner-title {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
