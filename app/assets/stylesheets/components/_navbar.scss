@@ -1,19 +1,39 @@
 .navbar {
   height: 80px;
-  background: green;
+  border: 2px solid black;
   width: 100%;
-  vertical-align: center;
+  font-size: 1.25em;
   }
-  .navbarwrap{
+
+.navbarwrap {
     display: flex;
-    width: 75%;
+    width: 80%;
     height: 100%;
     margin: 0 auto 0 auto;
-      }
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
 
 .navlinkbox {
   display: flex;
   align-items: center;
   list-style: none;
-  width: 25%;
+  width: 30%;
+  padding: 0px;
+}
+
+
+.navlogo {
+height: 50px;
+width: auto;
+margin-right: auto;
+}
+
+.navlink {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.navlink:hover {
+  border-bottom: 2px solid black;
 }
