@@ -1,0 +1,34 @@
+.filterbar {
+  background-color: #FFF;
+  height: 8rem;
+  width: 100%;
+}
+
+.filterbar__wrap {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+ }
+
+.dropdown--sortby{
+  display: block;
+  list-style-type: none;
+}
+
+.btn--filter {
+  display: inline-block;
+  cursor: pointer;
+  background-color: $red;
+  border: 0;
+  border-radius: 7px;
+  color: $grey;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin-right: 1rem;
+
+}
