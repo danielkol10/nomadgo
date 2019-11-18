@@ -1,40 +1,51 @@
-// footer sdesign
+// footer design
 
 .footer {
   width: 100%;
-  height: 70px;
-  background-color: rgba(252, 71, 65, 0.8);
+  background-color: $black;
   position: fixed;
   bottom: 0;
+  padding-bottom: 2rem;
   }
 // footer content position
+
 .footerwrap {
-  display: flex;
-  height: 100%;
-  width: 80%;
+  width: 50%;
   align-items: center;
-   margin: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+
 }
 
 // footer links box
 
 .footerlinks {
-  width: 25%;
-  display: flex;
-  list-style: none;
-   padding: 0;
-   text-align: center;
+ width: 50%;
+ display: flex;
+ font-size: 1.2rem;
 
 }
+
+
+.list {
+    list-style: none;
+   padding: 0 3rem;
+
+}
+
 
 .footerlink {
   text-decoration: none;
-
   margin: auto;
+  color: $green;
 }
-// scroll up button
 
-.scrollup {
-  width: 10%;
-  margin-left: auto;
+.footerlogo {
+  height: 2rem;
+}
+
+
+.divider {
+  border-bottom: solid 1px $grey;
+
 }
