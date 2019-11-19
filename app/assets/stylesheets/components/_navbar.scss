@@ -4,13 +4,11 @@
   width: 100%;
   background-color: transparent;
   font-size: 2.4rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 2;
 
 }
-
-
 
 .navbarwrap {
     display: flex;
@@ -25,6 +23,7 @@
 .navlinkbox {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   list-style: none;
   width: 30%;
   padding: 0px;
