@@ -1,7 +1,46 @@
 $black: #2C2C2C;
-$white: #fff;
 $grey: #F8F8F8;
 $red: #E85959;
 $orange: #F58D5A;
 $yellow: #FCF2E8;
 $green: #55BA94;
+
+
+// COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-white: #fff;
+
+$color-black: #000;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+// GRID
+$grid-width: 114rem;
+$space-vertical: 8rem;
+$space-vertical-small: 6rem;
+$space-horizontal: 6rem;
+
+// FONT-SIZE
+$default-font-size: 1.6rem;
+
+// SHADOW 
+$box-shadow-1: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+// BORDER-RADIUS
+
+$default-border-radius: 3px;
