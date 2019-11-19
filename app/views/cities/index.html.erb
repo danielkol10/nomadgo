@@ -1,5 +1,6 @@
 <%= render "partials/navbar"%>
-<%= render "partials/header" %>
+<%= render "partials/header"%>
+<%= render "partials/filterbar"%>
 <%= link_to "Blog", '/blog' %>
 <% @cities.each do |city| %>
   <%= link_to city.name, city_path(city) %>
