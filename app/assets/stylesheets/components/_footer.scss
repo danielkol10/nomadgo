@@ -2,39 +2,52 @@
 
 .footer {
   width: 100%;
-  height: 70px;
-  background-color: rgba(252, 71, 65, 0.8);
+  background-color: $black;
   position: fixed;
   bottom: 0;
+  color: $grey;
   }
+
 // footer content position
-.footerwrap {
+.footer__wraptop, .footer__wrapbottom{
   display: flex;
   height: 100%;
-  width: 80%;
+  width: 60%;
   align-items: center;
-   margin: 0 auto;
+  margin: 0 auto;
+  padding: 5rem 0rem;
 }
+
+
+
 
 // footer links box
 
 .footerlinks {
-  width: 25%;
-  display: flex;
-  list-style: none;
-   padding: 0;
-   text-align: center;
-
+ list-style: none;
+ padding: 0 2rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.4rem;
+   text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
 
 .footerlink {
+  color: $grey;
   text-decoration: none;
+  margin: 2rem 0rem;
 
-  margin: auto;
+  font-size: 1.6rem;
 }
-// scroll up button
 
-.scrollup {
-  width: 10%;
-  margin-left: auto;
+.footerlogo {
+  height: 3rem;
 }
+
+
+ .footer__wrapbottom .footerlinks:last-child {
+  display: flex;
+}
+
