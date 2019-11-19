@@ -41,9 +41,9 @@ margin-right: auto;
 .navlink {
   text-decoration: none;
   padding: 0.5rem;
-  color:#F8F8F8;
+  color: $color-grey;
 }
 
 .navlink:hover, .navlink:active {
-  border-bottom: 2px solid #313638;
+  border-bottom: 2px solid $color-black;
 }

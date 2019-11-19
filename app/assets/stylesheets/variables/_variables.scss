@@ -1,5 +1,4 @@
-$black: #2C2C2C;
-$grey: #F8F8F8;
+$color-grey: #F8F8F8;
 $red: #E85959;
 $orange: #F58D5A;
 $yellow: #FCF2E8;
@@ -13,7 +12,7 @@ $color-primary-dark: #28b485;
 
 $color-white: #fff;
 
-$color-black: #000;
+$color-black: #2C2C2C;
 
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
@@ -38,7 +37,10 @@ $space-horizontal: 6rem;
 // FONT-SIZE
 $default-font-size: 1.6rem;
 
-// SHADOW 
+//FONT FAMILLY
+$main-font-type: allumi-std-extended, sans-serif;
+
+// SHADOW
 $box-shadow-1: 0 1.5rem 4rem rgba($color-black, 0.15);
 
 // BORDER-RADIUS
