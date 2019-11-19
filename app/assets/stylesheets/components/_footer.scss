@@ -1,53 +1,53 @@
-// footer sdesign
 
 .footer {
   width: 100%;
-  background-color: $black;
+  background-color: $color-black;
   position: fixed;
   bottom: 0;
-  color: $grey;
-  }
+  color: $color-grey;
+  font-family: $main-font-type;
 
-// footer content position
-.footer__wraptop, .footer__wrapbottom{
+
+&__wraptop, &__wrapbottom {  //two parts footer
   display: flex;
-  height: 100%;
-  width: 60%;
-  align-items: center;
+  width: 66%;
   margin: 0 auto;
-  padding: 5rem 0rem;
-}
+  padding: 3rem 0rem;
 
+ }
 
-
-
-// footer links box
-
-.footerlinks {
+&__links , &__links--bottom { // list of links
  list-style: none;
- padding: 0 2rem;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 2.4rem;
-   text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 2px;
-}
 
 
-.footerlink {
-  color: $grey;
+&__link {                         // top part links
+  color: $color-grey;
   text-decoration: none;
-  margin: 2rem 0rem;
 
-  font-size: 1.6rem;
+  }
 }
 
-.footerlogo {
-  height: 3rem;
+&__links {                          // links
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
 }
 
-
- .footer__wrapbottom .footerlinks:last-child {
+&__links--bottom {            // lower part links
   display: flex;
+  width: 100%;
+justify-content: space-around;
+
+
 }
+
+&__divider {
+  border-top: solid lighten($color-black, 10%) 1px;
+}
+}
+
+
 
