@@ -10,18 +10,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 @import "index";
-
-* {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-html{
-  font-size: 10px; /* rem is 10 px */
-}
