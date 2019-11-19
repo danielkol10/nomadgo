@@ -1,0 +1,24 @@
+.header {
+  height: 85vh;
+  // background-image: url(.../assets/images/header.jpg);
+  background-image: image-url("header.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  // if css is supported then apply
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    // cross browser prefix before regular css
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

@@ -1,8 +1,7 @@
 <%= render "partials/navbar"%>
-<%= render "partials/banner" %>
+<%= render "partials/header" %>
 <%= link_to "Blog", '/blog' %>
-   <% @cities.each do |city| %>
-     <%= link_to city.name, city_path(city) %>
-
-   <% end %>
+<% @cities.each do |city| %>
+  <%= link_to city.name, city_path(city) %>
+<% end %>
 <%= render "partials/footer" %>
