@@ -1,13 +1,13 @@
 
 .navbar {
-  height: 70px;
-  border-bottom: 2px solid black;
+  height: 8rem;
   width: 100%;
   background-color: transparent;
-  font-size: 1.25em;
+  font-size: 2.4rem;
   position: fixed;
   top: 0;
   z-index: 2;
+
 }
 
 
@@ -16,10 +16,10 @@
     display: flex;
     width: 80%;
     height: 100%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
  }
 
 .navlinkbox {
@@ -28,20 +28,22 @@
   list-style: none;
   width: 30%;
   padding: 0px;
+  text-align: center;
 }
 
 
 .navlogo {
-height: 40px;
+height: 3rem;
 width: auto;
 margin-right: auto;
 }
 
 .navlink {
   text-decoration: none;
-  padding: 5px;
+  padding: 0.5rem;
+  color:#F8F8F8;
 }
 
 .navlink:hover, .navlink:active {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #313638;
 }
