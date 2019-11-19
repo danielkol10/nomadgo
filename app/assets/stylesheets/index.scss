@@ -1,6 +1,12 @@
 // Place all the styles related to the cities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "variables/variables";
+@import "utilities/typography";
+
+
 @import "components/navbar";
-@import "components/banner";
+@import "components/header";
 @import "components/footer";
