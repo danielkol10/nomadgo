@@ -3,18 +3,18 @@
   width: 100%;
   background-color: $color-black;
   color: $color-grey;
-  font-family: $main-font-type;
-
+  font-weight: 400;
 
 &__wraptop, &__wrapbottom {  //two parts footer
   display: flex;
-  width: 66%;
+  width: 50%;
   margin: 0 auto;
   padding: 3rem 0rem;
+  justify-content: space-between;
 
  }
 
-&__links , &__links--bottom { // list of links
+&__links , &__links--bottom,&__links--sm{ // list of links
  list-style: none;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -24,26 +24,39 @@
   color: $color-grey;
   text-decoration: none;
 
-  }
+    }
+
 }
 
 &__links {                          // links
 display: flex;
 flex-direction: column;
-width: 100%;
-align-items: center;
+cursor: pointer;
+}
+&__links--sm{
+  font-size: 1.6rem;
+  display: flex;
+  &__link{
+    margin-left: 3rem;
+    cursor: pointer;
+  }
 }
 
 &__links--bottom {            // lower part links
   display: flex;
   width: 100%;
-justify-content: space-around;
+justify-content: space-between;
 
 
 }
 
 &__divider {
   border-top: solid lighten($color-black, 10%) 1px;
+}
+&__copyright {
+  color: lighten($color-black, 30%);
+  text-align: center;
+
 }
 }
 
