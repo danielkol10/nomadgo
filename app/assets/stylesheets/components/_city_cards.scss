@@ -1,0 +1,23 @@
+.container {
+    width: 100vw;
+    margin: 6rem auto;
+    background-color: #ddd;
+
+
+    display: grid;
+    grid-template-rows: 40rem 40rem 40rem 40rem;
+    grid-template-columns: 40rem 40rem 40rem;
+    grid-gap: 10rem;
+    justify-content: center;
+
+
+    .item {
+        padding: 30px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 30px;
+        background-color: rgb(75, 50, 50);
+        text-align: center;
+        // align-self: center;
+    }
+}
