@@ -1,2 +1,8 @@
 // sections for cities show
+.test .navbar{
+  background-color: $color-black;
+   }
 
+   .test .navbar__linksbox__link:hover, .navbar__linksbox__link:active {
+  border-bottom: 2px solid $color-white;
+    }

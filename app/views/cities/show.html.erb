@@ -1,6 +1,8 @@
-<%= render "partials/navbar"%>
+<body class="test">
+  <%= render "partials/navbar"%>
 <h1><%= @city.name %> internet speed</h1>
 <%= @city.internet %>
 <%= link_to "city guide", city_guide_path(@city) %>
 
 <%= link_to 'Back', cities_path %>
+<body>
