@@ -1,77 +1,13 @@
-<% @cities.each do |city| %>
-  <%= link_to city.name, city_path(city) %>
-<% end %>
 <div class="container">
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">tlv</div>
-    <div class="card__weather">24c</div>
-    <div class="card__internet">22mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">bansko</div>
-    <div class="card__weather">24c</div>
-    <div class="card__internet">22mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">berlin</div>
-    <div class="card__weather">24c</div>
-    <div class="card__internet">22mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">paris</div>
-    <div class="card__weather">24c</div>
-    <div class="card__internet">22mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">city</div>
-    <div class="card__weather">24c</div>
-    <div class="card__internet">22mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">city</div>
-    <div class="card__weather">22c</div>
-    <div class="card__internet">24mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">city</div>
-    <div class="card__weather">22c</div>
-    <div class="card__internet">24mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">city</div>
-    <div class="card__weather">22c</div>
-    <div class="card__internet">24mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">city</div>
-    <div class="card__weather">22c</div>
-    <div class="card__internet">24mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">city</div>
-    <div class="card__weather">22c</div>
-    <div class="card__internet">24mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">city</div>
-    <div class="card__weather">22c</div>
-    <div class="card__internet">24mb</div>
-  </div>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__city">city</div>
-    <div class="card__weather">22c</div>
-    <div class="card__internet">24mb</div>
-  </div>
+  <% @cities.each do |city| %>
+    <div class="card">
+      <div class="card__image">
+        <%#= link_to image_tag(city.image, width: 100, height: 100), city_path(city) %>
+        <%= image_tag(city.image, width: 200, height: 200) %>
+      </div>
+      <div class="card__city"><%= city.name %></div>
+      <div class="card__weather"><%= city.weather %></div>
+      <div class="card__internet"><%= city.internet %></div>
+    </div>
+  <% end %>
 </div>
