@@ -1,16 +1,19 @@
 .sidebar {
     background-color: $color-grey;
-    color: lighten($color-black, 40%);
     font-size: 1.8rem;
     text-align: center;
 
     &__wrap {
         margin-top: 10rem;
         position: fixed;
+        height: 50vh;
     }
 
     &__category {
         margin-bottom: 4rem;
+        text-decoration: none;
+        color: lighten($color-black, 40%);
+        display: block;
     }
 }
 

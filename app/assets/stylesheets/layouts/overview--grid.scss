@@ -5,7 +5,7 @@
     grid-template-columns: 10% 1fr 10%;
     grid-template-rows: 50vh repeat(4, 1fr);
     grid-gap: 2rem;
-    grid-template-areas: "side head ." "side pros ." "side visa ." "side get .";
+    grid-template-areas: "side head ." "side why ." "side quality ." "side pros ." "side cost ." "side move .";
 
     & > * {
         background-color: $color-red;
@@ -22,14 +22,22 @@
     grid-area: side;
 }
 
-.visa {
-    grid-area: visa;
-}
-
-.gettingto {
-    grid-area: get;
+.life--quality {
+    grid-area: quality;
 }
 
 .proscons {
     grid-area: pros;
+}
+
+.why--city {
+    grid-area: why;
+}
+
+.cost-of-living {
+    grid-area: cost;
+}
+
+.moving-guide-link {
+    grid-area: move;
 }
