@@ -1,16 +1,18 @@
 <body class="test">
   <%= render "partials/navbar"%>
-
-    <h1><%= @city.name %> internet speed</h1>
+      <h1><%= @city.name %> internet speed</h1>
 <%= @city.internet %>
 <%= link_to "city guide", city_guide_path(@city) %>
 
 <%= link_to 'Back', cities_path %>
   <div class="grid">
-    <div class="sidebar">sidebar</div>
+        <div class="sidebar"><%= render "partials/sidebar"%></div>
+
     <div class="header--city">Header</div>
     <div class="proscons">Pros & Cons</div>
     <div class="visa">Do I need a VISA</div>
     <div class="gettingto">Lets ride a bike</div>
 </div>
+
+
 <body>
