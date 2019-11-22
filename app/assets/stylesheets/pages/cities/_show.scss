@@ -1,1 +1,10 @@
 // sections for cities show
+.test .navbar{                          //navbar background color
+  background-color: $color-black;
+   }
+
+   .test .navbar__linksbox__link:hover, .navbar__linksbox__link:active {     //navbar links border color
+  border-bottom: 2px solid $color-white;
+    }
+
+@import "layouts/overviewgrid";

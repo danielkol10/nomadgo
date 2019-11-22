@@ -1,5 +1,5 @@
 
-.navbar {
+.navbar {                            // navigation bar structure
   height: 8rem;
   width: 100%;
   background-color: transparent;
@@ -8,7 +8,7 @@
   top: 0;
   z-index: 2;
 
-&__wrap {
+&__wrap {                                // navigation bar container
     display: flex;
     width: 80%;
     height: 100%;
@@ -17,28 +17,25 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
  }
-&__menu--show, &__menu--hide {
+&__menu--show, &__menu--hide {               //mobile button settings on desktop
    transition: 0.3s;
    font-size: 3rem;
    cursor: pointer;
    display: none;
 }
-// &__menu--show {
-//   float: right;
-// }
 
-&__menu {
+&__menu {                          //mobile menu button color
   color:$color-white;
 }
 
-&__linksbox {
+&__linksbox {                     //links container structure
   display: flex;
   align-items: center;
   list-style: none;
   padding: 0px;
   text-align: center;
 
-  &__link {
+  &__link {                        //link design
   text-decoration: none;
   padding: 0.5rem;
   color: $color-grey;
@@ -50,14 +47,14 @@
     }
 }
 
-&__logo {
+&__logo {               //logo design
 height: 3rem;
 width: auto;
 margin-right: auto;
 }
 
 }
-#chk{
+#chk{                  //IDK but it makes the menu be responsive
   position: absolute;
   visibility: hidden;
   z-index: -1111;
@@ -70,7 +67,7 @@ margin-right: auto;
   display: block;
 }
 
-.navbar__linksbox {
+.navbar__linksbox {                     //link container mobile design
     flex-direction: column;
     justify-content: space-evenly;
     position: fixed;
@@ -89,13 +86,13 @@ margin-right: auto;
     }
 
   }
-    .navbar__menu--hide {
+    .navbar__menu--hide {                  // hide menu button placement
     position: absolute;
     top: 2.5rem;
     right: 10%;
     }
 
-    #chk:checked ~ .navbar__linksbox{
+    #chk:checked ~ .navbar__linksbox{           //IDK but it makes the menu be responsive
     right: 0;
   }
 }
