@@ -12,12 +12,13 @@
 
 
     .item {
+        display: grid;
         padding: 30px;
         color: white;
         font-family: sans-serif;
         font-size: 30px;
         background-color: rgb(75, 50, 50);
-        text-align: center;
-        // align-self: center;
+        align-items: center;
+        justify-items: center;
     }
 }
