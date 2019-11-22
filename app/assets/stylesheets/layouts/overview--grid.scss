@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    max-width: 1440px;
+    margin: 50px auto;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 50vh repeat(4, 1fr);
+    grid-gap: 2rem;
+    grid-template-areas: "side head ." "side pros ." "side visa ." "side get .";
+
+    & > * {
+        background-color: $color-red;
+        padding: 1rem 2rem;
+        color: $color-white;
+    }
+}
+
+.header--city {
+    grid-area: head;
+}
+
+.sidebar {
+    grid-area: side;
+}
+
+.visa {
+    grid-area: visa;
+}
+
+.gettingto {
+    grid-area: get;
+}
+
+.proscons {
+    grid-area: pros;
+}
