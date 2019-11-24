@@ -23,3 +23,26 @@
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+@include respond (tab-port) {
+.sidebar {
+  background-color: $color-white;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+
+  &__wrap {
+    display: flex;
+    margin-top: 0;
+    position: static;
+    margin: 0 auto;
+    widows: 100%;
+justify-content: space-around;
+  }
+  &__category {
+        margin-bottom: 0;
+
+    }
+}
+
+}

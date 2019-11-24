@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     max-width: 1440px;
-    margin: 50px auto;
+    margin: 5rem auto;
     grid-template-columns: 10% 1fr 10%;
     grid-gap: 2rem;
     grid-template-areas: "side head ." "side why ." "side quality ." "side pros ." "side cost ." "side move .";
@@ -40,4 +40,31 @@
 
 .moving-guide-link {
     grid-area: move;
+}
+
+
+@include respond (tab-port) {
+.grid {
+//   grid-template-columns: 1fr;
+//       grid-template-areas: "side"
+//                            "head"
+//                            "why"
+//                            "quality"
+//                            "pros"
+//                            "cost"
+//                            "move";
+// margin: 0;
+display: block;
+margin:2.5rem auto;
+& > * {
+margin-bottom: 2rem;
+        padding: 1rem;
+
+    }
+}
+.sidebar {
+  background-color: $color-white;
+  border-radius:0;
+}
+
 }
