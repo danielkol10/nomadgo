@@ -1,10 +1,43 @@
 .header--city {
     width: 100%;
     position: relative;
+    color: $color-white;
+    text-align: center;
+    background: $color-black;
 
     &__img {
         width: 100%;
-        max-height: 40rem;
         object-fit: cover;
+        display: block;
+        max-height: 40rem;
+        opacity: 0.6;
+    }
+
+    &__name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__weather {
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__cost {
+        position: absolute;
+        bottom: 4rem;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__internet {
+        position: absolute;
+        bottom: 4rem;
+        right: 20%;
+        transform: translate(-50%, -50%);
     }
 }
