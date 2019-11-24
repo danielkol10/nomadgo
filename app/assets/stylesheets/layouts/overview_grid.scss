@@ -1,5 +1,5 @@
 .grid {
-    display: grid;
+    display: grid;                                                //overview grid
     max-width: 1440px;
     margin: 5rem auto;
     grid-template-columns: 10% 1fr 10%;
@@ -42,19 +42,13 @@
     grid-area: move;
 }
 
+//Media Query
+
+
 
 @include respond (tab-port) {
 .grid {
-//   grid-template-columns: 1fr;
-//       grid-template-areas: "side"
-//                            "head"
-//                            "why"
-//                            "quality"
-//                            "pros"
-//                            "cost"
-//                            "move";
-// margin: 0;
-display: block;
+display: block;                               //change grid to one colmun
 margin:2.5rem auto;
 & > * {
 margin-bottom: 2rem;
@@ -64,7 +58,7 @@ margin-bottom: 2rem;
     }
 }
 .sidebar {
-  background-color: $color-white;
+  background-color: $color-white;                 //sidebar (topbar) design
   border-radius:0;
   margin-bottom: 0;
 }

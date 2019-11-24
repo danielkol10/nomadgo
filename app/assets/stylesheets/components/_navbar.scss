@@ -32,14 +32,14 @@
   display: flex;
   align-items: center;
   list-style: none;
-  padding: 0px;
   text-align: center;
+  margin-left: auto;
 
   &__link {                        //link design
   text-decoration: none;
   padding: 0.5rem;
   color: $color-grey;
-  margin-left: 2rem;
+  margin-left: 3rem;
    }
 
 &__link:hover, &__link:active {
@@ -58,6 +58,7 @@ margin-right: auto;
   position: absolute;
   visibility: hidden;
   z-index: -1111;
+
 }
 
 //Media Query
@@ -65,6 +66,9 @@ margin-right: auto;
 @include respond (tab-port) {
 .navbar__menu--hide, .navbar__menu--show {
   display: block;
+}
+.navbar__menu--show {
+  margin-left: auto;
 }
 
 .navbar__linksbox {                     //link container mobile design
@@ -81,6 +85,7 @@ margin-right: auto;
     transition: 0.3s;
     font-size: 3rem;
     z-index: 10;
+
 
     &__link {
       margin: 0;
