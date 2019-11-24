@@ -6,10 +6,12 @@
     grid-gap: 2rem;
     grid-template-areas: "side head ." "side why ." "side quality ." "side pros ." "side cost ." "side move .";
 
-    // & > * {
-    //     border: $color-red 2px solid;
-    //     color: $color-black;
-    // }
+    & > * {
+        background-color: $color-white;
+        border: 1px solid lighten($color-black, 70%);
+        padding: 3rem;
+        border-radius: 4px;
+    }
 }
 
 .header--city {
