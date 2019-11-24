@@ -3,14 +3,13 @@
     max-width: 1440px;
     margin: 50px auto;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: repeat(7, 1fr);
     grid-gap: 2rem;
     grid-template-areas: "side head ." "side why ." "side quality ." "side pros ." "side cost ." "side move .";
 
-    & > * {
-        border: $color-red 2px solid;
-        color: $color-black;
-    }
+    // & > * {
+    //     border: $color-red 2px solid;
+    //     color: $color-black;
+    // }
 }
 
 .header--city {
