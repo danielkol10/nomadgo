@@ -29,20 +29,24 @@
   background-color: $color-white;
     position: sticky;
     top: 0;
-    z-index: 30;
+    z-index: 1;
+    font-size: 1.4rem;
 
   &__wrap {
     display: flex;
     margin-top: 0;
     position: static;
     margin: 0 auto;
-    widows: 100%;
-justify-content: space-around;
+    justify-content: space-around;
   }
   &__category {
         margin-bottom: 0;
+        padding: 1rem;
 
     }
-}
 
+}
+.fas {
+        font-size: 2rem;
+}
 }

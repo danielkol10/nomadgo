@@ -58,13 +58,15 @@ display: block;
 margin:2.5rem auto;
 & > * {
 margin-bottom: 2rem;
-        padding: 1rem;
+        padding: 2rem;
+        border-radius: 0;
 
     }
 }
 .sidebar {
   background-color: $color-white;
   border-radius:0;
+  margin-bottom: 0;
 }
 
 }
