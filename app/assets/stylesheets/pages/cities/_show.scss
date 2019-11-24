@@ -1,8 +1,9 @@
 // sections for cities show
-@import "layouts/overview--grid";
+@import "layouts/overview_grid";
 @import "components/sidebar";
-@import "components/header--city";
-@import "components/city--love";
+@import "components/header_city";
+@import "components/city_love";
+@import "components/city_move_to_guide";
 
 .test .navbar { //navbar background color
     background-color: $color-black;
