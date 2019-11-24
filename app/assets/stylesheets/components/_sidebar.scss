@@ -2,11 +2,12 @@
     background-color: $color-grey;
     font-size: 1.8rem;
     text-align: center;
+    border: 0;
 
     &__wrap {
-        margin-top: 10rem;
+        margin-top: 8rem;
         position: fixed;
-        height: 50vh;
+        top: 10%;
     }
 
     &__category {
@@ -19,6 +20,6 @@
 
 .fas {
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
