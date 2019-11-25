@@ -1,16 +1,16 @@
-.sidebar {
+.sidebar {                                           // sidebar structure
     background-color: $color-grey;
     font-size: 1.8rem;
     text-align: center;
     border: 0;
 
-    &__wrap {
+    &__wrap {                                         //sidebar posizition
         margin-top: 8rem;
         position: fixed;
         top: 10%;
     }
 
-    &__category {
+    &__category {                                       // category design
         margin-bottom: 4rem;
         text-decoration: none;
         color: lighten($color-black, 40%);
@@ -18,8 +18,38 @@
     }
 }
 
-.fas {
+.fas {                                             // category icon design
     display: block;
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+
+//Media Query
+
+@include respond (tab-port) {
+.sidebar {
+  background-color: $color-white;                           //sidebar position
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 1.4rem;
+
+  &__wrap {                                         //sidebar structure
+    display: flex;
+    margin-top: 0;
+    position: static;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  &__category {                                         //category design
+        margin-bottom: 0;
+        padding: 1rem;
+
+    }
+
+}
+.fas {                                        //icon size
+        font-size: 2rem;
+}
 }
