@@ -7,7 +7,7 @@
   grid-template-rows: 40rem 40rem 40rem 40rem;
   grid-template-columns: 50rem 50rem 50rem;
   grid-auto-columns: 50rem 50rem 50rem;
-  grid-gap: 8rem;
+  grid-gap: 4.5rem;
   justify-content: center;
 
   .card {
@@ -27,26 +27,47 @@
       display: block;
       // max-height: 40rem;
       position: relative;
+      border-radius: 4%;
+
+      &:hover {
+        opacity: 0.8;
+        transition: all 0.4s;
+      }
     }
 
     &__city {
       position: absolute;
-      top: 50%;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3.7rem;
+    }
+
+    &__country {
+      position: absolute;
+      top: 62%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
     &__weather {
       position: absolute;
-      top: 60%;
-      left: 50%;
+      top: 90%;
+      left: 10%;
       transform: translate(-50%, -50%);
     }
 
     &__internet {
       position: absolute;
-      top: 70%;
+      top: 90%;
       left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__price {
+      position: absolute;
+      top: 90%;
+      left: 85%;
       transform: translate(-50%, -50%);
     }
   }
