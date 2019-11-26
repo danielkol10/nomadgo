@@ -31,22 +31,37 @@
 
     &__city {
       position: absolute;
-      top: 50%;
+      top: 47%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3.7rem;
+    }
+
+    &__country {
+      position: absolute;
+      top: 63%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
     &__weather {
       position: absolute;
-      top: 60%;
-      left: 50%;
+      top: 90%;
+      left: 10%;
       transform: translate(-50%, -50%);
     }
 
     &__internet {
       position: absolute;
-      top: 70%;
+      top: 90%;
       left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__price {
+      position: absolute;
+      top: 90%;
+      left: 85%;
       transform: translate(-50%, -50%);
     }
   }
