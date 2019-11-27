@@ -1,6 +1,6 @@
 <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' }, remote: true do |f| %>
-  <%= f.input :price, as: :radio_buttons, collection: ['1500'], selected: params[:price], input_html: { name: :price, onchange: "document.getElementById('search_btn').click()" }  %>
-  <span style="display:none;"><%= f.submit "Search", id: "search_btn" %></span>
+  <%= f.input :price, as: :select, collection: ['1384', '2000'], selected: params[:price], input_html: { name: :price }  %>
+  <%= f.submit "Search" %>
 <% end %>
 <div class="container" id="cities">
   <%= render @cities  %>
