@@ -3,6 +3,10 @@
 class City < ApplicationRecord
   has_one :guide, dependent: :destroy
 
+  after_commit on: :create do
+    Cities::WeatherJob.perform_later(self.id)
+  end
+
   def sync_weather!
     sync_weather
     save!
