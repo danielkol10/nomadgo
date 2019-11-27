@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_27_213343) do
+ActiveRecord::Schema.define(version: 2019_11_27_224505) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 2019_11_27_213343) do
     t.string "image"
     t.string "country"
     t.integer "price", default: 0
+    t.string "lat"
+    t.string "long"
     t.index ["price"], name: "index_cities_on_price"
   end
 
