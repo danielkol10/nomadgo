@@ -59,3 +59,4 @@ tokyo.save!
 seoul = City.create(name: 'seoul', internet: '300gb', weather: '17c', country: 'korea', price: '2000',
                     image: 'city_card_images/test.jpg')
 seoul.save!
+City.update_all(lat: '41.8404', long: '23.4857')
