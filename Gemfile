@@ -59,3 +59,4 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # http requests
 gem 'httparty', '~> 0.13.7'
+gem 'simple_form'

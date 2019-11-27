@@ -5,6 +5,12 @@ require 'httparty'
 class CitiesController < ApplicationController
   def index
     @cities = City.all
+
+    @search = params['search']
+    if @search.present?
+      @price = @search['price']
+      @cities = City.where(price: @price)
+    end
   end
 
   def show
