@@ -12,5 +12,6 @@ class City < ApplicationRecord
     url = "https://api.darksky.net/forecast/3399c810cb9e7497f7bedddf3f891700/#{self.lat},#{self.long}"
     response = HTTParty.get(url, format: :json)
     self.weather = response.parsed_response['currently']['temperature']
+    self.weather_updated_at = Time.current
   end
 end
