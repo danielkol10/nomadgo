@@ -8,7 +8,7 @@ class CitiesController < ApplicationController
     @cities = City.all
 
     if params[:price]
-      @cities = City.where(price: params[:price])
+      @cities = City.where('price <= ?', params[:price])
     end
 
     respond_to do |f|
