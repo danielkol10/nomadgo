@@ -4,6 +4,7 @@ require 'httparty'
 
 class CitiesController < ApplicationController
   def index
+    abort
     @cities = City.all
 
     if params[:price]
