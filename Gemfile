@@ -45,6 +45,8 @@ group :development do
   # auto reload after changing views
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'rack-livereload'
+  gem 'binding_of_caller'
+  gem 'better_errors'
 end
 
 group :test do
