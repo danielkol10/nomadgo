@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card__image">
+    <%= link_to image_tag(city.image, class: "card__image"), city_path(city)%>
+    <div class="card__city"><%= city.name %></div>
+    <div class="card__country"><%= city.country %></div>
+    <div class="card__price"><%= city.price %></div>
+    <div class="card__weather"><%= city.weather %></div>
+    <div class="card__internet"><%= city.internet %></div>
+  </div>
+</div>

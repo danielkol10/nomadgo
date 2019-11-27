@@ -6,10 +6,13 @@ class CitiesController < ApplicationController
   def index
     @cities = City.all
 
-    @search = params['search']
-    if @search.present?
-      @price = @search['price']
-      @cities = City.where(price: @price)
+    if params[:price]
+      @cities = City.where(price: params[:price])
+    end
+
+    respond_to do |f|
+      f.html
+      f.js
     end
   end
 
@@ -18,6 +21,9 @@ class CitiesController < ApplicationController
     dark_sky(41.8404, 23.4857)
   end
 
+  def c
+
+  end
   def dark_sky(lat, long)
     url = "https://api.darksky.net/forecast/3399c810cb9e7497f7bedddf3f891700/#{lat},#{long}"
     response = HTTParty.get(url, format: :json)
