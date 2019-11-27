@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_26_160127) do
+ActiveRecord::Schema.define(version: 2019_11_27_213343) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,8 @@ ActiveRecord::Schema.define(version: 2019_11_26_160127) do
     t.string "weather"
     t.string "image"
     t.string "country"
-    t.string "price"
+    t.integer "price", default: 0
+    t.index ["price"], name: "index_cities_on_price"
   end
 
   create_table "guides", force: :cascade do |t|
