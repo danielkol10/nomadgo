@@ -2,4 +2,15 @@
 
 class City < ApplicationRecord
   has_one :guide, dependent: :destroy
+
+  def sync_weather!
+    sync_weather
+    save!
+  end
+
+  def sync_weather
+    url = "https://api.darksky.net/forecast/3399c810cb9e7497f7bedddf3f891700/#{self.lat},#{self.long}"
+    response = HTTParty.get(url, format: :json)
+    self.weather = response.parsed_response['currently']['temperature']
+  end
 end
