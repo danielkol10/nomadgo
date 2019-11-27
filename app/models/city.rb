@@ -13,6 +13,7 @@ class City < ApplicationRecord
   end
 
   def sync_weather
+    return true unless lat.present?  long.present?
     url = "https://api.darksky.net/forecast/3399c810cb9e7497f7bedddf3f891700/#{self.lat},#{self.long}"
     response = HTTParty.get(url, format: :json)
     self.weather = response.parsed_response['currently']['temperature']
