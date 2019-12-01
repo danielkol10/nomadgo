@@ -7,6 +7,7 @@ class CitiesController < ApplicationController
     @cities = City.all
 
     @cities = City.where('price <= ?', params[:price]) if params[:price]
+    @cities = City.where('weather <= ?', params[:weather]) if params[:weather]
 
     respond_to do |f|
       f.html
