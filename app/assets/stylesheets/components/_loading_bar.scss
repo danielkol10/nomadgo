@@ -1,72 +1,181 @@
-.container {
-    margin: 10rem auto;
-    width: 30rem;
-    text-align: center;
+.progress-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 1rem 0;
 }
 
 .progress {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressFive 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
 
     &__bar {
-        height: 1.8rem;
-        border-radius: 4px;
-        transition: 0.4s linear;
-        transition-property: width, background-color;
-        background-color: #FCBC51;
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+.progress-4 {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressFour 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
+
+    &__bar {
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+.progress-3 {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressThree 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
+
+    &__bar {
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+.progress-2 {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressTwo 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
+
+    &__bar {
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+.progress-1 {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressOne 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
+
+    &__bar {
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes animateProgressFive {
+    0% {
+        width: 0%;
+    }
+
+    100% {
         width: 100%;
-        background-image: linear-gradient(45deg, rgb(252, 163, 17) 25%,
-                transparent 25%, transparent 50%,
-                rgb(252, 163, 17) 50%, rgb(252, 163, 17) 75%,
-                transparent 75%, transparent);
-        animation: progressAnimationFull 3s;
-
-        &-2 {
-            height: 1.8rem;
-            border-radius: 4px;
-            transition: 0.4s linear;
-            transition-property: width, background-color;
-            background-color: rgb(81, 252, 118);
-            width: 50%;
-            background-image: linear-gradient(45deg, rgba(36, 252, 17, 0.938) 25%,
-                    transparent 25%, transparent 50%,
-                    rgb(91, 252, 17) 50%, rgb(91, 252, 17) 75%,
-                    transparent 75%, transparent);
-            animation: progressAnimationHalf 3s;
-        }
     }
-
-
 }
 
-@keyframes progressAnimationFull {
+@keyframes animateProgressFour {
     0% {
-        width: 0
+        width: 0%;
     }
 
     100% {
-        width: 100%
+        width: 80%;
     }
 }
 
-@keyframes progressAnimationHalf {
+@keyframes animateProgressThree {
     0% {
-        width: 0
+        width: 0%;
     }
 
     100% {
-        width: 50%
+        width: 60%;
     }
 }
 
-// @keyframes progressAnimationOverAndBack {
-//     0% {
-//         width: 0
-//     }
+@keyframes animateProgressTwo {
+    0% {
+        width: 0%;
+    }
 
-//     75% {
-//         width: 53%
-//     }
+    100% {
+        width: 40%;
+    }
+}
 
-//     100% {
-//         width: 50%;
-//     }
-// }
+@keyframes animateProgressOne {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+
+
+// something like this in html erb
+// <div class="<%= 'progress-2' if @city.internet == '300gb' %>">
+
+
+// <% if @city.internet == "300gb" %>
+//  <div class="progress"></div>
+// <% else %>
+//  <div class="progress-2"></div>
+// <% end %>
+
+// ternary operator
+// <div class="<%= @city.internet == "300gb" ? "progress" : "progress-2"%>">

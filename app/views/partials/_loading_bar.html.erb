@@ -1,20 +1,22 @@
+<%# dynamic animations - if progress value 1 - 5 then apply fitting css animation (0 - 100% width) %>
+<%# see css for example %>
+<%# internet speed needs to be integer for calculations. %>
 <div class="container">
-  <div class="progress">
-    <div class="progress__bar">
+  <div class="row">
+    <h3 class="progress-title">Nightlife</h3>
+    <div class="progress">
+      <div class="progress__bar">
+      </div>
     </div>
-  </div>
-  <div class="progress">
-    <div class="progress__bar-2">
+    <h3 class="progress-title">Internet</h3>
+    <div class="<%= @city.internet == "300gb" ? "progress" : @city.internet == "22gb" ? "progress-4" : @city.internet == "18gb" ? "progress-3" : @city.internet == "13gb" ? "progress-2" : "progress-1"%>">
+      <div class="progress__bar">
+      </div>
     </div>
-  </div>
-</div>
-<div class="container">
-  <div class="progress">
-    <div class="progress__bar">
-    </div>
-  </div>
-  <div class="progress">
-    <div class="progress__bar-2">
+    <h3 class="progress-title">Cost of Living</h3>
+    <div class="progress">
+      <div class="progress__bar">
+      </div>
     </div>
   </div>
 </div>
