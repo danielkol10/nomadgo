@@ -1,0 +1,181 @@
+.progress-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 1rem 0;
+}
+
+.progress {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressFive 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
+
+    &__bar {
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+.progress-4 {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressFour 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
+
+    &__bar {
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+.progress-3 {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressThree 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
+
+    &__bar {
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+.progress-2 {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressTwo 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
+
+    &__bar {
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+.progress-1 {
+    height: 2rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background: #08a03b7c;
+    margin-bottom: 3rem;
+    box-shadow: none;
+    overflow: visible;
+
+    animation: animateProgressOne 3s;
+    // prevents the animation from skipping to its width at the end
+    animation-fill-mode: forwards;
+
+    &__bar {
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes animateProgressFive {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes animateProgressFour {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes animateProgressThree {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes animateProgressTwo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes animateProgressOne {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+
+
+// something like this in html erb
+// <div class="<%= 'progress-2' if @city.internet == '300gb' %>">
+
+
+// <% if @city.internet == "300gb" %>
+//  <div class="progress"></div>
+// <% else %>
+//  <div class="progress-2"></div>
+// <% end %>
+
+// ternary operator
+// <div class="<%= @city.internet == "300gb" ? "progress" : "progress-2"%>">
