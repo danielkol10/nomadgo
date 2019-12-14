@@ -1,20 +1,17 @@
 <body class="test">
   <%= render "partials/navbar"%>
-      <h1><%= @city.name %> internet speed</h1>
-<%= @city.internet %>
-<%= link_to "city guide", city_guide_path(@city) %>
-
-<%= link_to 'Back', cities_path %>
+  <h1><%= @city.name %> internet speed</h1>
+  <%= @city.internet %>
+  <%= link_to "city guide", city_guide_path(@city) %>
+  <%= link_to 'Back', cities_path %>
   <div class="grid">
-        <div class="sidebar"><%= render "partials/sidebar"%></div>
-
+    <div class="sidebar"><%= render "partials/sidebar"%></div>
     <div class="header--city"><%= render "partials/header_city"%></div>
     <div class="why--city"><%= render "partials/city_love"%></div>
     <div class="life--quality">IS QUALITY CAN EVEN BE CALCULATED THO</div>
     <div class="proscons">Pros & Cons</div>
     <div class="cost-of-living">IS IT EXPENSIVE THO?!</div>
     <div class="moving-guide-link"><%= render "partials/city_move_to_guide"%></div>
-</div>
-
-
-<body>
+  </div>
+  <%= render "partials/loading_bar" %>
+  <body>

@@ -1,0 +1,72 @@
+.container {
+    margin: 10rem auto;
+    width: 30rem;
+    text-align: center;
+}
+
+.progress {
+
+    &__bar {
+        height: 1.8rem;
+        border-radius: 4px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+        background-color: #FCBC51;
+        width: 100%;
+        background-image: linear-gradient(45deg, rgb(252, 163, 17) 25%,
+                transparent 25%, transparent 50%,
+                rgb(252, 163, 17) 50%, rgb(252, 163, 17) 75%,
+                transparent 75%, transparent);
+        animation: progressAnimationFull 3s;
+
+        &-2 {
+            height: 1.8rem;
+            border-radius: 4px;
+            transition: 0.4s linear;
+            transition-property: width, background-color;
+            background-color: rgb(81, 252, 118);
+            width: 50%;
+            background-image: linear-gradient(45deg, rgba(36, 252, 17, 0.938) 25%,
+                    transparent 25%, transparent 50%,
+                    rgb(91, 252, 17) 50%, rgb(91, 252, 17) 75%,
+                    transparent 75%, transparent);
+            animation: progressAnimationHalf 3s;
+        }
+    }
+
+
+}
+
+@keyframes progressAnimationFull {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes progressAnimationHalf {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 50%
+    }
+}
+
+// @keyframes progressAnimationOverAndBack {
+//     0% {
+//         width: 0
+//     }
+
+//     75% {
+//         width: 53%
+//     }
+
+//     100% {
+//         width: 50%;
+//     }
+// }
