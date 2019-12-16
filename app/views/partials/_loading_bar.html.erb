@@ -9,7 +9,7 @@
       </div>
     </div>
     <h3 class="progress-title">Internet</h3>
-    <div class="<%= @city.internet == "300gb" ? "progress" : @city.internet == "22gb" ? "progress-4" : @city.internet == "18gb" ? "progress-3" : @city.internet == "13gb" ? "progress-2" : "progress-1"%>">
+    <div class="<%= @city.internet == 50.to_s ? "progress" : @city.internet == 40.to_s ? "progress-4" : @city.internet == 30.to_s ? "progress-3" : @city.internet == 20.to_s ? "progress-2" : "progress-1"%>">
       <div class="progress__bar">
       </div>
     </div>
