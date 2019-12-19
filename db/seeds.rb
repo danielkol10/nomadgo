@@ -21,7 +21,13 @@ berlin_guide.save!
 
 chiang_mai = City.create(name: 'chiang mai',
                          internet: '20',
-                         weather: nil, country: 'thailand', price: '1384', lat: '41.8404', long: '23.4857',
+                         weather: nil, country: 'thailand', price: '1384', lat: '18.796143', long: '98.979263', why_love: ", Thailand is among the best places in the world for digital nomads. It’s warm
+                         year-round, super cheap, safe, walkable and has mountains!
+                         Here, you can experience the magic of Thai culture, super friendly locals, amazing local &
+                         international food. All this plus a large selection of great cafes, coworking spaces to work
+                         from, and too many events to attend. Long story short; Chiang Mai is a dream come true
+                         for most digital nomads.",
+                         community: '5',
                          image: 'city_card_images/test.jpg')
 chiang_mai.save!
 
