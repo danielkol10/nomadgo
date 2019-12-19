@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_27_225934) do
+ActiveRecord::Schema.define(version: 2019_12_19_113228) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,5 +38,15 @@ ActiveRecord::Schema.define(version: 2019_11_27_225934) do
     t.index ["city_id"], name: "index_guides_on_city_id"
   end
 
+  create_table "pros_cons", force: :cascade do |t|
+    t.bigint "city_id", null: false
+    t.string "name"
+    t.string "pro_or_con"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["city_id"], name: "index_pros_cons_on_city_id"
+  end
+
   add_foreign_key "guides", "cities"
+  add_foreign_key "pros_cons", "cities"
 end

@@ -24,6 +24,10 @@ chiang_mai = City.create(name: 'chiang mai',
                          image: 'city_card_images/test.jpg')
 chiang_mai.save!
 
+chiang_mai_pros_cons = ProsCon.create(name: 'humid', pro_or_con: 'c')
+chiang_mai_pros_cons.city = chiang_mai
+chiang_mai_pros_cons.save!
+
 istanbul = City.create(name: 'istanbul', internet: '20', weather: nil, country: 'turkey', price: '1384', lat: '41.8404', long: '23.4857',
                        image: 'city_card_images/test.jpg')
 istanbul.save!
