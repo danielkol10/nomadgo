@@ -1,4 +1,4 @@
-.header--city {                                 //section design
+.header--city { //section design
     width: 100%;
     position: relative;
     color: $color-white;
@@ -6,7 +6,7 @@
     background: $color-black;
     padding: 0;
 
-    &__img {                                        //image design
+    &__img { //image design
         width: 100%;
         object-fit: cover;
         display: block;
@@ -14,7 +14,7 @@
         opacity: 0.55;
     }
 
-    &__name {                                         //info positioning
+    &__name { //info positioning
         position: absolute;
         top: 50%;
         left: 50%;

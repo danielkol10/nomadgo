@@ -8,13 +8,21 @@
         margin-top: 8rem;
         position: fixed;
         top: 10%;
+
+        // left: 10%;
+
     }
 
     &__category { // category design
         margin-bottom: 4rem;
         text-decoration: none;
         color: lighten($color-black, 40%);
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__category:hover {
+        color: $color-orange;
     }
 }
 

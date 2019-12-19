@@ -1,7 +1,7 @@
 .grid {
-    display: grid;                                                //overview grid
+    display: grid; //overview grid
     max-width: 1440px;
-    margin: 5rem auto;
+    margin: 0 auto 3rem;
     grid-template-columns: 10% 1fr 10%;
     grid-gap: 2rem;
     grid-template-areas: "side head ." "side why ." "side quality ." "side pros ." "side cost ." "side move .";
@@ -44,23 +44,21 @@
 
 //Media Query
 
+@include respond(tab-port) {
+    .grid {
+        display: block; //change grid to one colmun
+        margin: 2.5rem auto;
 
-
-@include respond (tab-port) {
-.grid {
-display: block;                               //change grid to one colmun
-margin:2.5rem auto;
-& > * {
-margin-bottom: 2rem;
-        padding: 2rem;
-        border-radius: 0;
-
+        & > * {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 0;
+        }
     }
-}
-.sidebar {
-  background-color: $color-white;                 //sidebar (topbar) design
-  border-radius:0;
-  margin-bottom: 0;
-}
 
+    .sidebar {
+        background-color: $color-white; //sidebar (topbar) design
+        border-radius: 0;
+        margin-bottom: 0;
+    }
 }
