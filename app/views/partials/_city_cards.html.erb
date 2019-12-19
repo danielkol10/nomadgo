@@ -3,7 +3,7 @@
   <span style="display:none;"><%= f.submit "Search", id: "search_btn" %></span>
 <% end %>
 <%= simple_form_for :test, url: root_path, method: "GET", html: { class: 'form-inline' }, remote: true do |f| %>
-  <%= f.input :weather, as: :radio_buttons, collection: ['40', '45'], label: "good weather", selected: params[:weather], input_html: { name: :weather, onchange: "document.getElementById('test_btn').click()" }  %>
+  <%= f.input :weather, as: :radio_buttons, collection: ['40', '45', '50', '55'], label: "good weather", selected: params[:weather], input_html: { name: :weather, onchange: "document.getElementById('test_btn').click()" }  %>
   <span style="display:none;"><%= f.submit "test", id: "test_btn" %></span>
 <% end %>
 <div class="container" id="cities">
