@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_19_113228) do
+ActiveRecord::Schema.define(version: 2019_12_19_135726) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,40 @@ ActiveRecord::Schema.define(version: 2019_12_19_113228) do
     t.string "lat"
     t.string "long"
     t.datetime "weather_updated_at"
+    t.string "population"
+    t.text "why_love"
+    t.string "housing_cost"
+    t.string "food_cost"
+    t.string "transportation_cost"
+    t.string "community"
+    t.string "facebook_groups"
+    t.string "meetups"
+    t.string "average_speed_dl"
+    t.string "average_speed_up"
+    t.string "environment_quality"
+    t.string "water_quality"
+    t.string "air_quality"
+    t.string "work_places"
+    t.string "cafes"
+    t.string "coworking"
+    t.string "activities"
+    t.string "nightlife"
+    t.string "outdoor"
+    t.string "safety"
+    t.string "crime_level"
+    t.string "daylight_safety"
+    t.string "night_safety"
+    t.string "tolerance"
+    t.string "racial_tolerance"
+    t.string "lgbt_tolerance"
+    t.string "walkability"
+    t.string "walkability_comfort"
+    t.string "healthcare"
+    t.string "medical_staff"
+    t.string "medical_equipment"
+    t.string "healthcare_centers"
+    t.string "english_speaking"
+    t.string "english_speaking_percent"
     t.index ["price"], name: "index_cities_on_price"
   end
 
