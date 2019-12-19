@@ -33,3 +33,11 @@ body {
         margin-bottom: 3rem;
     }
 }
+
+.sectiontitle {
+    display: inline-block;
+    margin-bottom: 3rem;
+    font-family: $heading-font-type;
+    font-size: 2.4rem;
+    border-bottom: 2px solid $color-red;
+}
