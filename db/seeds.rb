@@ -21,7 +21,7 @@ berlin_guide.save!
 
 chiang_mai = City.create(name: 'chiang mai',
                          internet: '20',
-                         weather: nil, country: 'thailand', price: '1384', lat: '41.8404', long: '23.4857',
+                         weather: nil, country: 'thailand', price: '1384', lat: '41.8404', long: '23.4857', why_love: "is a sprawling, diverse metropolis, home to people from around the world. Although it is roughly nine times the size of Paris, Berlin's key districts are well-connected by public transport or cycling roads, and many even close enough for walking. The flexible work environment combined with easy access to venture capital attracts young people and entrepreneurs, making Berlin one of the most vibrant startup scenes in Europe.",
                          image: 'city_card_images/test.jpg')
 chiang_mai.save!
 

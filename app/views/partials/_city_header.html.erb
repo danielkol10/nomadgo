@@ -1,8 +1,8 @@
 <div class="header--city">
   <%= image_tag("header.jpg", class: "header--city__img") %>
   <div class="header--city__name">
-    <h2 class="header--city__name--title"><%= @city.name %></h2>
-    <h3 class="header--city__name--subtitle"><%= @city.country %></h3>
+    <h2 class="header--city__name--title"><%= @city.name.titleize %></h2>
+    <h3 class="header--city__name--subtitle"><%= @city.country.titleize %></h3>
   </div>
   <h3 class="header--city__weather"><%= @city.weather %></h3>
   <h3 class="header--city__internet"><%= @city.internet %></h3>
