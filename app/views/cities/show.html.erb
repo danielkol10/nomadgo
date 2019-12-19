@@ -9,7 +9,12 @@
     <div class="header--city"><%= render "partials/header_city"%></div>
     <div class="why--city"><%= render "partials/city_love"%></div>
     <div class="life--quality">IS QUALITY CAN EVEN BE CALCULATED THO</div>
-    <div class="proscons">Pros & Cons</div>
+    <div class="proscons">Pros & Cons
+      <%# add if p_c.pro_or_con == "p" color green else color red %>
+      <% @city.pros_cons.each do |p_c|%>
+        <%= p_c.name %>
+      <% end %>
+    </div>
     <div class="cost-of-living">IS IT EXPENSIVE THO?!</div>
     <div class="moving-guide-link"><%= render "partials/city_move_to_guide"%></div>
   </div>

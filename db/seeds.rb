@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-City.destroy_all
-Guide.destroy_all
+# City.destroy_all
+# Guide.destroy_all
 
 bansko = City.create(name: 'bansko', internet: '40', weather: nil, country: 'bulgaria', price: '1384', lat: '44.8404', long: '23.4857',
                      image: 'city_card_images/test.jpg')
@@ -9,6 +9,7 @@ bansko.save!
 bansko_guide = Guide.create(title: 'bansko guide')
 bansko_guide.city = bansko
 bansko_guide.save!
+
 berlin = City.create(name: 'berlin', internet: '40', weather: nil, country: 'germany', price: '1384', lat: '41.8404', long: '23.4857',
                      image: 'city_card_images/test.jpg')
 berlin.save!
@@ -23,6 +24,14 @@ chiang_mai = City.create(name: 'chiang mai',
                          weather: nil, country: 'thailand', price: '1384', lat: '41.8404', long: '23.4857',
                          image: 'city_card_images/test.jpg')
 chiang_mai.save!
+
+chiang_mai_pros_cons = ProsCon.create(name: 'humid', pro_or_con: 'c')
+chiang_mai_pros_cons.city = chiang_mai
+chiang_mai_pros_cons.save!
+
+chiang_mai_pros_cons2 = ProsCon.create(name: 'sunny', pro_or_con: 'p')
+chiang_mai_pros_cons2.city = chiang_mai
+chiang_mai_pros_cons2.save!
 
 istanbul = City.create(name: 'istanbul', internet: '20', weather: nil, country: 'turkey', price: '1384', lat: '41.8404', long: '23.4857',
                        image: 'city_card_images/test.jpg')
