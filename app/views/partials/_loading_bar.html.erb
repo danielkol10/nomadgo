@@ -13,6 +13,11 @@
       <div class="progress__bar">
       </div>
     </div>
+    <h3 class="progress-title">Community</h3>
+    <div class="<%= @city.community == "5" ? "progress" : @city.community == "4" ? "progress-4" : @city.community == "3" ? "progress-3" : @city.community == "2" ? "progress-2" : "progress-1"%>">
+      <div class="progress__bar">
+      </div>
+    </div>
     <h3 class="progress-title">Cost of Living</h3>
     <div class="progress">
       <div class="progress__bar">
