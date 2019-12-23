@@ -1,0 +1,21 @@
+.proscons {
+    display: flex;
+    justify-content: space-between;
+
+    &__pros, &__cons {
+        background-color: $color-white;
+        border: 1px solid lighten($color-black, 70%);
+        padding: 3rem 10rem 3rem 3rem;
+        border-radius: 4px;
+    }
+
+    &__pros {
+        margin-right: 3rem;
+    }
+}
+
+.proslist, .conslist {
+    list-style: none;
+    font-size: $default-font-size;
+    line-height: 5rem;
+}
