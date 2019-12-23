@@ -1,12 +1,14 @@
 .proscons {
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     &__pros, &__cons {
         background-color: $color-white;
         border: 1px solid lighten($color-black, 70%);
-        padding: 3rem 10rem 3rem 3rem;
+        padding: 3rem 3rem;
         border-radius: 4px;
+        width: 50%;
     }
 
     &__pros {
@@ -14,8 +16,23 @@
     }
 }
 
+.proslists, .conslists {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
 .proslist, .conslist {
     list-style: none;
     font-size: $default-font-size;
     line-height: 5rem;
+    padding-right: 2rem;
+}
+
+.prositem {
+    color: $color-green;
+}
+
+.consitem {
+    color: $color-red;
 }
