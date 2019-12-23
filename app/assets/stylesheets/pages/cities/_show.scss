@@ -6,6 +6,10 @@
 @import "components/city_move_to_guide";
 @import "components/quality_life";
 @import "components/proscons";
+@import "components/cost_of_living_housing";
+@import "components/cost_of_living_daily";
+@import "components/weather";
+@import "components/best_time";
 
 .test .navbar { //navbar background color
     background-color: $color-black;

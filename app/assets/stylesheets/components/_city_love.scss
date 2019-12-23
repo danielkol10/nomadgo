@@ -1,29 +1,17 @@
-.citylove { //section design
+.citylove__content { //section design
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &__img {
+    .citylove__img {
         display: block;
         width: 35%;
         object-fit: cover;
     }
 
-    &__text {
+    .paragraph {
         width: 60%;
-
-        &__sectiontitle {
-            // display: inline-block;
-            // margin-bottom: 3rem;
-            // font-family: $heading-font-type;
-            // font-size: 2.4rem;
-            // border-bottom: 2px solid $color-red;
-
-        }
-
-        &__sectionparagraph {
-            font-size: $default-font-size;
-        }
+        text-align: left;
     }
 }
