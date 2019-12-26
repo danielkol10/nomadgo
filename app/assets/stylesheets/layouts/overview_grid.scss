@@ -1,18 +1,21 @@
 .grid {
-    display: grid;                                                //overview grid
+    display: grid; //overview grid
     max-width: 1440px;
     margin: 5rem auto;
     grid-template-columns: 10% 1fr 10%;
     grid-gap: 2rem;
-    grid-template-areas: "side head ." "side why ." "side quality ." "side pros ." "side cost ." "side move .";
+    grid-template-areas: "side head .""side why .""side quality .""side pros .""side housing .""side daily .""side weather .""side best .""side video .""side move .";
 
-    & > * {
+    &>* {
         background-color: $color-white;
         border: 1px solid lighten($color-black, 70%);
         padding: 3rem;
         border-radius: 4px;
+        text-align: center;
     }
 }
+
+
 
 .header--city {
     grid-area: head;
@@ -28,39 +31,59 @@
 
 .proscons {
     grid-area: pros;
+    background-color: $color-grey;
+    border: none;
+    padding: 0px;
 }
 
 .why--city {
     grid-area: why;
 }
 
-.cost-of-living {
-    grid-area: cost;
+.cost-of-living-housing {
+    grid-area: housing;
+}
+
+.cost-of-living-daily {
+    grid-area: daily;
+}
+
+.weather {
+    grid-area: weather;
+}
+
+.best {
+    grid-area: best;
+}
+
+.city-video {
+    grid-area: video;
 }
 
 .moving-guide-link {
     grid-area: move;
 }
 
+
+
 //Media Query
-
-
-
 @include respond (tab-port) {
-.grid {
-display: block;                               //change grid to one colmun
-margin:2.5rem auto;
-& > * {
-margin-bottom: 2rem;
-        padding: 2rem;
-        border-radius: 0;
+    .grid {
+        display: block; //change grid to one colmun
+        margin: 2.5rem auto;
 
+        &>* {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 0;
+
+        }
     }
-}
-.sidebar {
-  background-color: $color-white;                 //sidebar (topbar) design
-  border-radius:0;
-  margin-bottom: 0;
-}
+
+    .sidebar {
+        background-color: $color-white; //sidebar (topbar) design
+        border-radius: 0;
+        margin-bottom: 0;
+    }
 
 }

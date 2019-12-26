@@ -1,24 +1,33 @@
-.sidebar { // sidebar structure
+.sidebar {
+    // sidebar structure
     background-color: $color-grey;
     font-size: 1.8rem;
     text-align: center;
     border: 0;
 
-    &__wrap { //sidebar posizition
+    &__wrap {
+        //sidebar posizition
         margin-top: 8rem;
         position: fixed;
         top: 10%;
     }
 
-    &__category { // category design
+    &__category {
+        // category design
         margin-bottom: 4rem;
         text-decoration: none;
         color: lighten($color-black, 40%);
-        display: block;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            color: $color-orange;
+        }
     }
 }
 
-.sidebar__category--icon { // category icon design
+.sidebar__category--icon {
+    // category icon design
     display: block;
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -34,7 +43,8 @@
         z-index: 1;
         font-size: 1.4rem;
 
-        &__wrap { //sidebar structure
+        &__wrap {
+            //sidebar structure
             display: flex;
             margin-top: 0;
             position: static;
@@ -42,13 +52,15 @@
             justify-content: space-around;
         }
 
-        &__category { //category design
+        &__category {
+            //category design
             margin-bottom: 0;
             padding: 1rem;
         }
     }
 
-    .fas { //icon size
+    .fas {
+        //icon size
         font-size: 2rem;
     }
 }

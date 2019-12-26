@@ -1,0 +1,47 @@
+//pros & cons structure
+
+.proscons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: left;
+
+    &__pros,
+    &__cons {
+        background-color: $color-white;
+        border: 1px solid lighten($color-black, 70%);
+        padding: 3rem 3rem;
+        border-radius: 4px;
+        width: 50%;
+    }
+
+    &__pros {
+        margin-right: 3rem;
+    }
+}
+
+//lists styling
+
+.proslists,
+.conslists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.proslist,
+.conslist {
+    list-style: none;
+    font-size: $default-font-size;
+    line-height: 5rem;
+    padding-right: 2rem;
+}
+
+//items stylign
+
+.prositem {
+    color: $color-green;
+}
+
+.consitem {
+    color: $color-red;
+}
