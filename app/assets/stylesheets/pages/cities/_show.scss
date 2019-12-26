@@ -1,14 +1,17 @@
 // sections for cities show
 @import "layouts/overview_grid";
 @import "components/sidebar";
-@import "components/header_city";
+@import "components/city_header";
 @import "components/city_love";
 @import "components/city_move_to_guide";
 
-.test .navbar { //navbar background color
+.test .navbar {
+    //navbar background color
     background-color: $color-black;
 }
 
-.test .navbar__linksbox__link:hover, .navbar__linksbox__link:active { //navbar links border color
+.test .navbar__linksbox__link:hover,
+.navbar__linksbox__link:active {
+    //navbar links border color
     border-bottom: 2px solid $color-white;
 }

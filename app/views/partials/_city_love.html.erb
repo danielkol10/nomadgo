@@ -1,7 +1,7 @@
 <div class="citylove">
-  <div class="citylove__text">
-    <h2 class="citylove__text__sectiontitle">Why You'll Love <%= @city.name %></h2>
-    <p class="citylove__text__sectionparagraph"><%= @city.name.titleize %><%= @city.why_love %></p>
+  <h2 class="sectiontitle">Why You'll Love <%= @city.name %></h2>
+  <div class="citylove__content">
+    <p class="paragraph"><%= @city.name.titleize %><%= @city.why_love %></p>
+    <%= image_tag("https://dal3fatminugb.cloudfront.net/url-https%3A%2F%2Fd13k13wj6adfdf.cloudfront.net%2Fdots%2Frdot.png(13.5,52.4)/11,45,1/510x340.png?access_token=pk.eyJ1IjoidGVsZXBvcnQiLCJhIjoiY2lnM3VqNXVqMDJsaHYza2gwN2wzdXhidCJ9.PuTxgLkbswKZzPhzlKgv4A", class: "citylove__img") %>
   </div>
-  <%= image_tag("https://dal3fatminugb.cloudfront.net/url-https%3A%2F%2Fd13k13wj6adfdf.cloudfront.net%2Fdots%2Frdot.png(13.5,52.4)/11,45,1/510x340.png?access_token=pk.eyJ1IjoidGVsZXBvcnQiLCJhIjoiY2lnM3VqNXVqMDJsaHYza2gwN2wzdXhidCJ9.PuTxgLkbswKZzPhzlKgv4A", class: "citylove__img") %>
 </div>
