@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.rings-container .card {
+.rings-container .rings-wrap {
     position: relative;
     width: 16em;
 }
@@ -25,6 +25,7 @@ svg {
     position: relative;
     width: 16em;
     height: 16em;
+    transform: rotate(126deg);
 }
 
 svg circle {
@@ -35,27 +36,36 @@ svg circle {
     stroke-width: 15;
     stroke-linecap: round;
     transform: translate(1em, 1em);
-    stroke-dasharray: 360;
-    stroke-dashoffset: 0;
+    stroke-dasharray: 352;
 }
 
-// svg circle:nth-child(2) {
-//     stroke-dasharray: 180;
-//     stroke-dashoffset: 180;
-// }
+.fill {
+    animation: 3s ease-in-out forwards circle--animation;
+}
 
-// .card:nth-child(1) svg circle:nth-child(2) {
-//     stroke: $color-green; //color of stroke according to scrore
-// }
+.rings-wrap:nth-child(1) svg circle:nth-child(2) {
+    stroke: $color-green; //color of stroke according to scrore
+}
 
-// .card:nth-child(2) svg circle:nth-child(2) {
-//     stroke: $color-green;
-// }
+.rings-wrap:nth-child(2) svg circle:nth-child(2) {
+    stroke: $color-green;
+}
 
-// .card:nth-child(3) svg circle:nth-child(2) {
-//     stroke: $color-green;
-// }
+.rings-wrap:nth-child(3) svg circle:nth-child(2) {
+    stroke: $color-green;
+}
 
-// .card:nth-child(4) svg circle:nth-child(2) {
-//     stroke: $color-green;
-// }
+.rings-wrap:nth-child(4) svg circle:nth-child(2) {
+    stroke: $color-green;
+}
+
+@keyframes circle--animation { //circle loading animation
+    0% {
+        stroke-dasharray: 0 440;
+        srtore-dashoffset: 440;
+    }
+
+    100% {
+        stroke-dasharray: 335;
+    }
+}
