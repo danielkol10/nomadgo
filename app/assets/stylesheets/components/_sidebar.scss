@@ -4,12 +4,14 @@
     font-size: 1.8rem;
     text-align: center;
     border: 0;
+    font-weight: 700;
 
     &__wrap {
         //sidebar posizition
         margin-top: 8rem;
         position: fixed;
         top: 10%;
+        left: 10%;
     }
 
     &__category {
