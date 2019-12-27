@@ -1,0 +1,54 @@
+.cost-of-living--daily {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    width: 40%;
+}
+
+.transportation {
+    margin-bottom: 6em;
+}
+
+.table {
+    font-family: $main-font-type;
+    font-size: $default-font-size;
+    width: 100%;
+    line-height: 2.6;
+    text-align: right;
+
+    //Table Title Design
+
+    &--header {
+        display: flex;
+        align-items: baseline;
+        font-size: 2em;
+        width: 100%;
+        border-bottom: solid 2px $color-black;
+        justify-content: center;
+    }
+
+    // Icon Design
+
+    &--icon {
+        line-height: inherit;
+        margin-left: 1em;
+        color: $color-orange;
+        font-size: 1.2em;
+    }
+}
+
+// Table Specific Design
+
+#table-label {
+    text-align: left;
+}
+
+td {
+    border-bottom: dashed 2px darken($color-grey, 10%);
+}
+
+tr:last-child td {
+    border: none;
+}
