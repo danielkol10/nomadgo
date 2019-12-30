@@ -1,2 +1,38 @@
 <h2 class="sectiontitle">Best Time To Visit</h2>
-<div class="timeline"></div>
+<div class="timeline">
+ <ul class="year">
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+   <li class="month">Jan</li>
+ </ul>
+  <!-- Tab links -->
+    <button class="timeline-button timeline-button--best" onclick="openCity(event, 'best-time')">Good</button>
+    <button class="timeline-button timeline-button--ok" onclick="openCity(event, 'ok-time')">Ok</button>
+    <button class="timeline-button timeline-button--bad" onclick="openCity(event, 'bad-time')">Bad</button>
+</div>
+
+  <!-- Tab content -->
+  <div id="best-time" class="timeline-button-content">
+    <h3>Best Time</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="ok-time" class="tabcontent">
+    <h3>Ok Time</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="bad-time" class="tabcontent">
+    <h3>Bad Time</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
